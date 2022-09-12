@@ -271,11 +271,11 @@ img {
 }
 .modal a {
   position: absolute;
-  right: 0;
-  color: var(--social-color);
+ right: 0;
+    color: var(--social-color);
   /* background: rgba(255, 255, 255, 0.1);*/
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--cross-color);
   display: flex;
@@ -283,6 +283,27 @@ img {
   justify-content: center;
   margin: 8px 8px 0 0;
 }
+textarea {
+  resize: none;
+}
+.form {position: relative;
+ 
+  width: 300px;
+  outline: 1px solid tomato;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-field label {
+  margin-bottom: 10px;
+}
+
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
