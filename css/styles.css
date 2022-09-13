@@ -269,12 +269,12 @@ img {
   transition-duration: 1s;
   z-index: 2;
 }
-.modal a {
+/* .modal a - работает, но тогда условия договора смещаются */
+.modal-cross {
   position: absolute;
- right: 0;
+  right: 0;
     color: var(--social-color);
-  /* background: rgba(255, 255, 255, 0.1);*/
-  width: 32px;
+   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1px solid var(--cross-color);
@@ -287,15 +287,23 @@ textarea {
   resize: none;
 }
 .form {position: relative;
- 
-  width: 300px;
+
+  width: 100%;
   outline: 1px solid tomato;
-  padding: 20px;
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
+/* .form-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em; 
+
+color: #212121;} */
 .form-field {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -303,7 +311,7 @@ textarea {
 .form-field label {
   margin-bottom: 10px;
 }
-
+/* .conditions{display: inline; } */
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
