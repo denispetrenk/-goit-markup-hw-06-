@@ -70,7 +70,7 @@
             
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <!--  с классом ссылка не работает?? -->
+    <!--  с классом ссылка не работает на liveserver , зато через гитхаб норм?? -->
       <a class="modal-cross" data-modal-close href="">
               <svg class="" width="18" height="18">
                 <use href="./images/icons/icons.svg#icon-cross"></use>
@@ -80,19 +80,29 @@
 
                  <p class="form-title" >Залиште свої дані, ми вам передзвонимо</p>
 
-      <div class="form-field">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" placeholder="check" />
+      
+        <label for="name" >Имя</label>
+        <div class="form-field">
+        <input type="text" class="form-input" name="name" id="name"  />
+        <svg class="form-svg" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-form-person"></use>
+              </svg>
       </div>
 
-      <div class="form-field">
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" />
+        <label for="tel" class="form-label">Телефон</label>
+        <div class="form-field">
+        <input type="tel" class="form-input" name="tel" id="tel" />
+         <svg class="form-svg" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-form-tel"></use>
+              </svg>
       </div>
-      <div class="form-field">
-        <label for="mail-id">
-          <span>Почта</span> </label>
-        <input type="email" name="mail" id="mail-id" />
+
+        <label for="mail-id"> Почта </label>
+          <div class="form-field">
+          <input type="email" class="form-input" name="mail" id="mail-id" />
+         <svg class="form-svg" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-form-mail"></use>
+              </svg>
       </div>
       
 
@@ -100,11 +110,11 @@
       <label for="comment">Коментар</label></div>
       <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
     
-  <div>
+  <div class="conditions">
     <input type="checkbox" name="topic" value="html" id="html" />
         <label for="html"><span> Погоджуюся з розсилкою та приймаю <a class="conditions" href="">Умови договору</a> </span></label>
      
-     </div>   <button type="submit">Відправити</button>
+     </div>   <button type="submit" class="form-btn"><span class="button-serv"> Відправити</span></button>
     </form>
 
   

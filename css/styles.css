@@ -17,8 +17,8 @@
   --group-color: #eeeeee;
   --line-color: #ececec;
   --social-color: #afb1b8;
-  --main-font: "Roboto", sans-serif;
-  --second-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
 }
 
 body {
@@ -133,7 +133,7 @@ img {
 }
 /*  */
 .nav-active:after {
-  content: "";
+  content: '';
   position: absolute;
   border-bottom: 4px solid var(--accent-color);
   left: 0;
@@ -273,8 +273,8 @@ img {
 .modal-cross {
   position: absolute;
   right: 0;
-    color: var(--social-color);
-   width: 32px;
+  color: var(--social-color);
+  width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1px solid var(--cross-color);
@@ -286,7 +286,8 @@ img {
 textarea {
   resize: none;
 }
-.form {position: relative;
+.form {
+  position: relative;
 
   width: 100%;
   outline: 1px solid tomato;
@@ -303,15 +304,48 @@ letter-spacing: 0.03em;
 
 color: #212121;} */
 .form-field {
-  /* outline: 1px solid blue; */
+  position: relative;
+
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
+.form-input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
 .form-field label {
   margin-bottom: 10px;
 }
-/* .conditions{display: inline; } */
+.form-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+/* .form-input:focus+.form-svg-tel{color: var(--accent-color);}
+.form-svg-mail {position: absolute; left: 50px; top: 44%;
+transform: translateY(-50%);}
+.form-svg-tel{position: absolute;left: 50px; top: 31%;
+transform: translateY(-50%);} */
+
+.form-btn {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conditions {
+  margin-bottom: 30px;
+}
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
