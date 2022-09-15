@@ -106,15 +106,21 @@
       </div>
       
 
-   
+    
       <label for="comment" class="form-label">Коментар</label>
       <textarea name="comment" id="comment" class=" textarea" cols="72" rows="10" placeholder="Введіть текст"></textarea>
-    
-  <div class="conditions">
-    <input type="checkbox" name="topic" value="html" id="html" required />
+      <div class="conditions">
+
+        <input class="form-checkbox visually-hidden" type="checkbox" name="topic" value="html" id="html" required />
+             <svg class="icon-checkbox" width="16" height="15">
+              <use class="icon-unchecked" href="./images/icons/icons.svg#icon-uncheck"></use> 
+              <use class="icon-checked" href="./images/icons/icons.svg#icon-check"></use>
+                
+              </svg>
         <label for="html"><span> Погоджуюся з розсилкою та приймаю <a class="conditions" href="">Умови договору</a> </span></label>
+          </div> 
      
-     </div>   <button type="submit" class="form-btn"><span class="button-serv"> Відправити</span></button>
+     <button type="submit" class="form-btn"><span class="button-serv"> Відправити</span></button>
     </form>
 
   
@@ -131,6 +137,10 @@
             Характеристики - увага, пунктуальность ....
           </h2>
           <!-- это скрытый тэг --> 
+          <svg class="icon-checkbox" width="16" height="15" >
+            <use class="icon-checked"  href="./images/icons/icons.svg#icon-check"></use>
+          </svg>
+    
           <ul class="characters list">
             <li>
               <div class="features"><a class="contacts-item " href="">
