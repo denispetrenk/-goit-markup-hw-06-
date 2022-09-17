@@ -269,7 +269,7 @@ img {
   transition-duration: 1s;
   z-index: 2;
 }
-/* .modal a - работает, но тогда условия договора смещаются */
+
 .modal-cross {
   position: absolute;
   right: 0;
@@ -282,6 +282,7 @@ img {
   align-items: center;
   justify-content: center;
   margin: 8px 8px 0 0;
+  z-index: 100;
 }
 
 svg path {
@@ -393,19 +394,19 @@ textarea:hover {
 .form-input:focus::placeholder {
   opacity: 1;
 }
-
+/* ховер фокус для бордера инпута */
 .form-field:focus-within .form-input,
 .form-field:hover .form-input {
   border-color: var(--accent-color);
-  color: var(--accent-color);
+}
+/* ховер фокус для иконки инпута */
+.form-field:hover .form-svg,
+.form-field:focus-within .form-svg {
+  fill: var(--accent-color);
 }
 
-.form-field:hover .form-svg,
-.form-field:focus .form-svg {
-  fill: #2196f3;
-}
-.form-field .form-input:focus .form-svg {
-  fill: #2196f3;
+.form-field .form-input:focus + .form-svg {
+  fill: var(--accent-color);
 }
 .conditions {
   margin-top: 20px;
