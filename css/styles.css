@@ -289,11 +289,13 @@ img {
   border-radius: 50%;
   border: 1px solid var(--cross-color);
   background-color: var(--background-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 8px 8px 0 0;
   z-index: 100;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-cross:hover,
@@ -310,6 +312,8 @@ img {
 textarea {
   display: block;
   resize: none;
+  width: 100%;
+  height: 120px;
   padding: 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -330,12 +334,12 @@ textarea:hover {
 
 .form {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 4px;
 }
 
@@ -381,6 +385,7 @@ textarea:hover {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus,
@@ -465,8 +470,8 @@ textarea:hover {
 .form-field:focus .form-svg {
   color: blue;
 }
-/* visually-hidden */
 
+/* visually-hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -480,7 +485,6 @@ textarea:hover {
   overflow: hidden;
 }
 .img-list {
-  /* background-color: var(--second-background-color);*/
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -490,7 +494,6 @@ textarea:hover {
   background-color: rgba(47, 48, 58, 0.4);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-backgr.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0;
@@ -500,11 +503,10 @@ textarea:hover {
 }
 
 .hero .header {
-  /* max-width: 1600px;
-  text-align: center;*/
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
 .button-serv {
   display: block;
   margin-top: 30px;
@@ -529,6 +531,7 @@ textarea:hover {
   display: flex;
   gap: 30px;
 }
+
 .title {
   /*заголовок проектов в порфолио*/
   margin-bottom: 4px;
@@ -580,6 +583,7 @@ textarea:hover {
 .team-list:first-child {
   margin-left: 0;
 }
+
 .text {
   /*текст в проектах портфолио*/
   font-family: inherit;
@@ -605,19 +609,12 @@ textarea:hover {
 .why-text {
   position: absolute;
   bottom: 0;
-  /* right: 50%;
-  transform: translate(50%, 0); */
   width: 100%;
-
   background-color: var(--why-bg-color);
   color: var(--background-color);
-  /* font-style: normal; */
   font-weight: 700;
   line-height: 16px;
-  /* text-align: center; */
-  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
-  /* z-index: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,7 +622,6 @@ textarea:hover {
 }
 .team-item {
   max-width: 270px;
-  /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
